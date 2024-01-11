@@ -170,3 +170,29 @@ function calcule(a,op,b){
 }
 
 console.log(calcule(5,"c",2))
+
+function test(array) {
+    let T = [];
+
+    for (let i = 0; i < array.length; i++) {
+        let found = false;
+
+        // Cette boucle vérifie si l'élément actuel de 'array' existe déjà dans 'T'
+        for (let j = 0; j < T.length; j++) {
+            if (T[j] === array[i]) {
+                found = true; // L'élément a été trouvé, on marque 'found' comme vrai
+                break;        // On sort de la boucle car l'élément a déjà été trouvé
+            }
+        }
+
+        // Si l'élément n'a pas été trouvé dans 'T', on l'ajoute à 'T'
+        if (!found) {
+            T.push(array[i]);
+        }
+    }
+
+    return T;
+}
+
+const socks = [1, 2, 3, 1, 2, 4];
+console.log(test(socks));
