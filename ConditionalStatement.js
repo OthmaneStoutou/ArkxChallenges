@@ -77,29 +77,29 @@ function ExamGrade(score){
     if (score < 0 || score >100){
         console.log('You must be enter a positive Value between 0 and 100');
     }
-    if (score>= 0 &&score <=15){
+    else if (score <=15){
         console.log("Grade is F")
     }
         
         
-    if (score> 15 && score <=40){
+    else if (score <=40){
         console.log("Grade is E")
     }
         
-    if (score> 40 && score <=55){
+    else if (score <=55){
         console.log("Grade is D")
     }
         
-    if (score> 55 && score <=70){
+    else if (score <=70){
         console.log("Grade is C")
     }
         
-    if (score> 70 && score <=85){
+    else if (score <=85){
         console.log("Grade is B")
 
     }
         
-    if (score> 85 &&score <=100){
+    else {
         console.log("Grade is A")
     }
         

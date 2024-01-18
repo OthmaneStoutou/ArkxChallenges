@@ -15,7 +15,7 @@ function factorial(num){
     }
 }
 
-console.log(factorial(5))
+console.log(factorial(3))
 
 //Function 2 :
 function NumberOfDigits(Num){
@@ -196,3 +196,4 @@ function test(array) {
 
 const socks = [1, 2, 3, 1, 2, 4];
 console.log(test(socks));
+
